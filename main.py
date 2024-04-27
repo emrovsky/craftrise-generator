@@ -72,6 +72,7 @@ def generate_account():
     gen = CraftriseGen()
     username = ((gen.create_nickname())+str(random.randint(100,999)))[:16]
     gen.get_signup_page()
+    time.sleep(10)
     gen.create_account(username)
 
 if __name__ == '__main__':
